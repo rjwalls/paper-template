@@ -15,5 +15,5 @@ git clone --recursive git@github.com:rjwalls/paper-template.git
 You'll want to change the remote URL using:
 
 ```bash
-git remote set-rul origin git@github.com:rjwalls/NEW-REPO-NAME.git
+git remote set-url origin git@github.com:USERNAME/NEW-REPO-NAME.git
 ```
