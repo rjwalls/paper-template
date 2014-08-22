@@ -1,3 +1,15 @@
+## Paper stuff
+paper/revision.tex
+paper/paper.pdf
+
+## Misc. Hidden Files:
+.idea
+*.RApp*
+*.DS_Store
+*.swp
+*.Rhistory
+
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

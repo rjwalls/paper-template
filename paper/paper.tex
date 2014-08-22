@@ -1,0 +1,34 @@
+\newcommand{\thetitle}{Clever Title Featuring a PUN \\ and Forced Acronym}
+\newcommand{\pdftitle}{Clever Title Featuring a PUN and Forced Acronym}
+\newcommand{\pdfauthors}{Robert J. Walls, Bro Magnum} 
+
+
+\newcount\draft\draft=1 % set to 0 for "publication"
+
+\newcommand{\sysname}{\textsc{Pun}\xspace}
+
+\input{preamble}
+
+\begin{document}
+
+% Add page numbers
+\pagenumbering{arabic}
+% remove copyright box.  For submitted version only.
+\makeatletter
+\def\@copyrightspace{\relax}
+\makeatother
+
+\title{\thetitle}
+\author{Robert J. Walls \qquad Bro Magnum \\
+Department of Computer Science and Engineering \\
+Pennsylvania State University, University Park, PA, USA \\
+\href{mailto:rjwalls@cse.psu.edu,bro@cse.psu.edu}
+{\email{\{rjwalls, bro\}@cse.psu.edu}}}
+\maketitle
+
+\input{abstract}
+\input{intro}
+
+\bibliographystyle{abbrv}
+\bibliography{../bib/bib}
+\end{document}

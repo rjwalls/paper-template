@@ -1,0 +1,102 @@
+%% Based in large part on a preamble made by Yuriy Brun
+
+\documentclass{sig-alternate}
+
+\ifnum\draft=1
+  % include the revision number in a footer
+  \usepackage{draftfooter}
+  \newcommand{\todo}[1]{{\color{red}\bfseries [[#1]]}}
+\else
+  \newcommand{\todo}[1]{\relax}
+\fi
+
+
+\nonfrenchspacing
+
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+
+\makeatletter
+\let\sigproof\proof
+\let\sigendproof\endproof
+\let\proof\@undefined
+\let\endproof\@undefined
+\makeatother
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{subfigure}
+\usepackage{balance}
+\usepackage{graphicx}
+\usepackage{xspace}
+\usepackage{pslatex}
+\usepackage{pifont}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage[nospace,adjust]{cite}
+\usepackage{url}
+\usepackage{amsthm}
+\usepackage{cancel}
+\usepackage{color,colortbl}
+\usepackage[font=small,font={small,sf},labelfont=bf]{caption}
+\usepackage{microtype}
+\usepackage{listings}
+\usepackage{xfrac}
+
+%% Do not split footnotes across pages
+\interfootnotelinepenalty=10000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% At least 80% of every float page must be taken up by
+% floats; there will be no page with more than 20% white space.
+\def\topfraction{.9}
+\def\dbltopfraction{\topfraction}
+\def\floatpagefraction{\topfraction}     % default .5
+\def\dblfloatpagefraction{\topfraction}  % default .5
+\def\textfraction{.1}
+
+\setcounter{topnumber}{4}
+\setcounter{bottomnumber}{4}
+\setcounter{totalnumber}{6}
+
+%% Bring items closer together in list environments
+%% This doesn't work with an optional argument to the list environment.
+% Prevent infinite loops
+\let\Itemize =\itemize    
+\let\Enumerate =\enumerate
+\let\Description =\description
+% Zero the vertical spacing parameters
+\def\Nospacing{\itemsep=0pt\topsep=0pt\partopsep=0pt\parskip=0pt\parsep=0pt}
+% Redefine the environments in terms of the original values
+\renewenvironment{itemize}{\Itemize\Nospacing}{\endlist}
+\renewenvironment{enumerate}{\Enumerate\Nospacing}{\endlist}
+\renewenvironment{description}{\Description\Nospacing}{\endlist}
+
+\newcommand{\urlwofont}[1]{\urlstyle{same}\url{#1}}
+
+\newcommand{\1}{{\em (i)}}
+\newcommand{\2}{{\em (ii)}}
+\newcommand{\3}{{\em (iii)}}
+\newcommand{\4}{{\em (iv)}}
+\newcommand{\5}{{\em (v)}}
+
+\def\Nospacing{\itemsep=0pt\topsep=0pt\partopsep=0pt\parskip=0pt\parsep=0pt}
+
+\usepackage{hyperref}
+\hypersetup{%
+  pdftitle = {\pdftitle},
+  pdfkeywords = {},
+  pdfauthor = {\pdfauthors},
+  bookmarksnumbered,
+  bookmarksopen=false,
+  urlcolor=black,
+  linkcolor=black,
+  citecolor=black,
+  colorlinks=true,
+  pdfstartview={FitH},
+}
+
+\usepackage{stfloats}
+
