@@ -17,3 +17,46 @@ You'll want to change the remote URL using:
 ```bash
 git remote set-url origin git@github.com:USERNAME/NEW-REPO-NAME.git
 ```
+
+# Misc. Commands
+
+## Balance Columns
+
+Use `\vfill\eject` to force content to the next column. This is especially
+useful for balancing out the references on the final page. Just make sure to
+edit the .BBL file (you may want to move the BBL contents to the main.tex
+file because the BBL isn't tracked in the repository). 
+
+## Embed Fonts
+
+Use:
+
+```bash
+ps2pdf -dPDFSETTINGS=/prepress paper.pdf paper_camera.pdf
+```
+
+Check the results with (look for the emb column):
+```bash
+pdffonts paper_camera.pdf
+```
+
+## Make PS from PDF
+
+```bash
+pdf2ps paper_camera.pdf paper_camera.ps
+```
+
+## Make single TeX source file
+
+Removes comments too!
+
+```bash
+latexpand paper.tex > paper_camera.tex
+```
+
+Get `latexpand` [here](https://gitorious.org/latexpand).
+
+## Useful utils
+
+See Marc's [blog
+post](http://people.cs.umass.edu/~liberato/blog/2013/01/19/miscellaneous-latex-slash-bibtex-tools/) for a list of useful latex utilities.
