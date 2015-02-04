@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+
+# Why comprised of is bad: https://en.wikipedia.org/wiki/User:Giraffedata/comprised_of
+
+mistakes="comprised of|\
+irregardless|\
+alot"
+
+if [ "$1" = "" ]; then
+ echo "usage: `basename $0` <file> ..."
+ exit
+fi
+ 
+egrep -n -i --color=always "\\b($mistakes)\\b" $* | grep -v "[0-9]\{1,\}:%"
+ 
+exit $?
