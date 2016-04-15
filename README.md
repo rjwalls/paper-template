@@ -60,3 +60,8 @@ Get `latexpand` [here](https://gitorious.org/latexpand).
 
 See Marc's [blog
 post](http://people.cs.umass.edu/~liberato/blog/2013/01/19/miscellaneous-latex-slash-bibtex-tools/) for a list of useful latex utilities.
+
+
+## Gotchas
+
+Make sure to have a reference cited in your .tex file (in-text citation, e.g. \cite{Walls:2011a}) otherwise this will not compile, even if you have entries in your bib file.
