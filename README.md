@@ -40,6 +40,11 @@ Check the results with (look for the emb column):
 pdffonts paper_camera.pdf
 ```
 
+Note, you can get `pdffonts` from `Poppler` and Homebrew using:
+```bash
+brew install poppler
+```
+
 ## Make PS from PDF
 
 ```bash
