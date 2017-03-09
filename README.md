@@ -16,6 +16,7 @@ You'll want to change the remote URL using:
 
 ```bash
 git remote set-url origin git@github.com:USERNAME/NEW-REPO-NAME.git
+git push -u origin master
 ```
 
 # Misc. Commands
