@@ -1,5 +1,4 @@
-paper-template
-==============
+# About
 
 A generic starting template for writing research papers.
 
@@ -19,7 +18,9 @@ git remote set-url origin git@github.com:USERNAME/NEW-REPO-NAME.git
 git push -u origin master
 ```
 
-# Misc. Commands
+# Preparing the Camera Ready
+
+The following are miscellaneous code snippets that might be useful when preparing the camera ready.  
 
 ## Balance Columns
 
@@ -62,12 +63,7 @@ latexpand paper.tex > paper_camera.tex
 
 Get `latexpand` [here](https://gitorious.org/latexpand).
 
-## Useful utils
-
-See Marc's [blog
-post](http://people.cs.umass.edu/~liberato/blog/2013/01/19/miscellaneous-latex-slash-bibtex-tools/) for a list of useful latex utilities.
-
 
 ## Gotchas
 
-Make sure to have a reference cited in your .tex file (in-text citation, e.g. \cite{Walls:2011a}) otherwise this will not compile, even if you have entries in your bib file.
+Make sure to have a reference cited in your .tex file (in-text citation, e.g. \cite{Walls:2011a}) otherwise this template will not compile, even if you have entries in your bib file.
