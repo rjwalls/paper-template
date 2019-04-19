@@ -1,9 +1,9 @@
-\newcommand{\thetitle}{Clever Title Featuring a PUN \\ and Forced Acronym}
-\newcommand{\pdftitle}{Clever Title Featuring a PUN and Forced Acronym}
+\newcommand{\thetitle}{Descriptive Title Featuring a PUN \\ and Forced Acronym}
+\newcommand{\pdftitle}{Descriptive Title Featuring a PUN and Forced Acronym}
 \newcommand{\pdfauthors}{Robert J. Walls, Bro Magnum} 
 
-
-\newcount\draft\draft=1 % set to 0 for "publication"
+% set to 0 for "publication"
+\newcount\draft\draft=1 
 
 % auto hyphenate a long system name 
 \newcommand{\sysname}{\textsc{System\-Name\-That\-Pun}\xspace}
@@ -12,24 +12,22 @@
 
 \begin{document}
 
-% Add page numbers
-\pagenumbering{arabic}
-% remove copyright box.  For submitted version only.
-\makeatletter
-\def\@copyrightspace{\relax}
-\makeatother
+\title{\Large \bf \thetitle}
 
-\title{\thetitle}
-\author{Robert J. Walls \qquad Bro Magnum \\
-Department of Computer Science and Engineering \\
-Pennsylvania State University, University Park, PA, USA \\
-\href{mailto:rjwalls@cse.psu.edu,bro@cse.psu.edu}
-{\email{\{rjwalls, bro\}@cse.psu.edu}}}
+\author{
+{\rm Robert  J. Walls}\\
+Worcester Polytechnic Institute
+\and
+{\rm Bro Magnum}\\
+Fake Academy of Science
+}  
+
+
 \maketitle
 
 \input{abstract}
 \input{intro}
 
-\bibliographystyle{abbrv}
+\bibliographystyle{plain}
 \bibliography{../bib/bib}
 \end{document}

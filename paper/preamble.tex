@@ -1,20 +1,19 @@
 %% Based in large part on a preamble made by Yuriy Brun
 
-\documentclass{sig-alternate}
+\documentclass[letterpaper,twocolumn,10pt]{article}
+\usepackage{usenix2019_v3}
 
 \ifnum\draft=1
   % include the revision number in a footer
-  \usepackage{draftfooter}
-  \newcommand{\todo}[1]{{\color{red}\bfseries [[#1]]}}
-\else
+  \usepackage{draftfooter} \newcommand{\todo}[1]{{\color{red}\bfseries [[#1]]}} \else
   \newcommand{\todo}[1]{\relax}
 \fi
 
 
 \nonfrenchspacing
 
-\pdfpagewidth 8.5in
-\pdfpageheight 11in
+%\pdfpagewidth 8.5in
+%\pdfpageheight 11in
 
 \makeatletter
 \let\sigproof\proof
@@ -37,7 +36,7 @@
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{booktabs}
-\usepackage[nospace,adjust]{cite}
+%\usepackage[nospace,adjust]{cite}
 \usepackage{url}
 \usepackage{amsthm}
 \usepackage{cancel}
